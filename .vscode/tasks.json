@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Build with Clang",
+        "type": "shell",
+        "command": "clang++",
+        "args": [
+          "-std=c++11",
+          "-stdlib=libc++",
+          "${fileBasenameNoExtension}.cpp",     // source file
+          "-o",
+          "${workspaceFolder}/out/${fileBasenameNoExtension}.out",     // target file
+          "--debug"             // causes debug symbols to be produced, which is required for stepping through code when you debug.
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      }
+    ]
+  }

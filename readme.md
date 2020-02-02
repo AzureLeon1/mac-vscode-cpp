@@ -1,0 +1,1 @@
+# Mac VsCode C++ Development Environment Configuration
